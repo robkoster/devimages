@@ -13,5 +13,5 @@ RUN adduser --disabled-password --uid $USER_UID $USERNAME && \
     chmod 0440 /etc/sudoers.d/$USERNAME
 
 # Install packages
-RUN apt-get update && apt-get -y install sudo git openssh-client
+RUN apt-get update && apt-get -y install sudo git openssh-client gcc libffi-dev
 
